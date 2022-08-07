@@ -57,7 +57,7 @@ button {
     height: 300px;
     padding: 10px;
     color: black;
-    font-weight: bold;
+    font-size: 14px;
     box-sizing: border-box;
     outline: 2px solid green;
     display: flex;
