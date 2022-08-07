@@ -56,10 +56,15 @@ button {
     width: 300px;
     height: 300px;
     padding: 10px;
+    color: black;
+    font-weight: bold;
     box-sizing: border-box;
     outline: 2px solid green;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: white
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 80%, auto, contain;
+    background-position: 50% 75%;
 }

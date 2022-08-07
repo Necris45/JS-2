@@ -10,9 +10,9 @@ const goods = [
     {},
 ];
 
-const renderGoodsItem = (title = 'Товар', price = '5000', stock = 'в наличии') => {
+const renderGoodsItem = (title = 'Товар', price = '5000', image_url, stock = 'в наличии') => {
     return `
-    <div class="goods-item">
+    <div class="goods-item" style=${image_url}>
       <h3>${title}</h3>
       <h4>${stock}</h4>
       <p>${price}</p>
@@ -22,8 +22,9 @@ const renderGoodsItem = (title = 'Товар', price = '5000', stock = 'в на�
 
 const renderGoodsList = (list) => {
     let goodsList = list.map(item => {
-        let {title, price} = item;
-        return renderGoodsItem(title, price)
+        let {title, price, image} = item;
+        image_url = "\"background-image:url(\'" + image + "\')\""
+        return renderGoodsItem(title, price, image_url)
     }).join('');
     document.querySelector('.goods-list').innerHTML = goodsList;
 }
