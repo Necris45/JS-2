@@ -10,11 +10,11 @@ const goods = [
     {},
 ];
 
-const renderGoodsItem = (title = 'Товар', price = '5000', matter = 'в наличии') => {
+const renderGoodsItem = (title = 'Товар', price = '5000', stock = 'в наличии') => {
     return `
     <div class="goods-item">
       <h3>${title}</h3>
-      <h4>${matter}</h4>
+      <h4>${stock}</h4>
       <p>${price}</p>
     </div>
   `;
