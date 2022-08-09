@@ -23,7 +23,7 @@ const renderGoodsItem = (title = 'Товар', price = '5000', image_url, stock 
 const renderGoodsList = (list) => {
     let goodsList = list.map(item => {
         let {title, price, image} = item;
-        image_url = "\"background-image:url(\'" + image + "\')\""
+        let image_url = "\"background-image:url(\'" + image + "\')\""
         return renderGoodsItem(title, price, image_url)
     }).join('');
     document.querySelector('.goods-list').innerHTML = goodsList;

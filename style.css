@@ -7,14 +7,14 @@ body {
     grid-template-rows: max-content auto;
     gap: 60px;
     display: grid;
-    background-color: gray;
+    background-color: #edecec;
 }
 
 header {
     height: 40px;
     padding: 10px;
     display: grid;
-    background-color: #483dba;
+    background-color: #817bc7;
     margin-top: 0px;
 }
 
