@@ -81,7 +81,7 @@ function makeGETRequest(url) {
     }
 
 class GoodsItem {
-    constructor({product_name = 'Товар', price = 5000}) {
+    constructor({product_name, price}) {
         this.title = product_name;
         this.price = price;
     }
