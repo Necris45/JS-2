@@ -52,4 +52,3 @@ const goodsList = new GoodsList();
 goodsList.fetchGoods();
 goodsList.render();
 const res = goodsList.calculateTotalPrice()
-debugger
