@@ -56,27 +56,27 @@
 const API_URL = 'https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses';
 function makeGETRequest(url) {
     return new Promise((resolve, reject) => {
-        var xhr;
+        var response;
         if (window.XMLHttpRequest) {
-            xhr =new XMLHttpRequest();
+            response =new XMLHttpRequest();
             }
         else if (window.ActiveXObject) {
-            xhr = new ActiveXObject("Microsoft.XMLHTTP");
+            response = new ActiveXObject("Microsoft.XMLHTTP");
             }
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4) {
-                if (xhr.status === 200) {
-                    resolve(xhr.responseText);
+        response.onreadystatechange = function () {
+            if (response.readyState === 4) {
+                if (response.status === 200) {
+                    resolve(response.responseText);
                 } else {
-                    reject(`'Error, xhr.status = ${xhr.status}'`);
+                    reject(`'Error, response.status = ${response.status}'`);
                 }
             }
         };
-        xhr.onerror = function (error) {
+        response.onerror = function (error) {
             reject(err);
         };
-        xhr.open('GET', url, true);
-        xhr.send();
+        response.open('GET', url, true);
+        response.send();
     });
     }
 
