@@ -12,32 +12,19 @@
       <header>
          <h1 class="title">SomeShop pet project</h1>
          <div class="search">
-            <input type="text" class="goods-search" v-model="searchLine"/>
+            <search-component v-model="searchLine"></search-component>
          </div>
          <div class="actions">
-            <button @click="setVisionCard" class="cart-button" type="button">Корзина</button>
+            <custom-button v-on:click="setVisionCard">Корзина</custom-button>
          </div>
       </header>
       <main>
          <div v-if="items.length" class="goods-list">
-            <div class="goods-item" v-for="item in items">
-               <h3>{{ item.product_name }}</h3>
-               <p>{{ item.price }}</p>
-            </div>
+            <goods-item v-for="item in filteredItems" v-bind:item="item" ></goods-item>
          </div>
          <div v-else>Товаров нет</div>
       </main>
-      <div v-if="cardIsVision" class="fixed-area">
-         <div class="basked-card">
-            <div class="basket-card__header">
-               <h1 class="basket-card__header__title">basket card</h1>
-               <div @click="setVisionCard" class="basket-card__header__delete-icon"></div>
-            </div>
-            <div class="basket-card__content">
-               content
-            </div>
-         </div>
-      </div>
+      <basket-goods v-if="cardIsVision" v-on:closeclick="setVisionCard"></basket-goods>
 
 
       <div>{{ searchLine }}</div>
