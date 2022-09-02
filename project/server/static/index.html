@@ -12,7 +12,7 @@
       <header>
          <h1 class="title">SomeShop pet project</h1>
          <div class="search">
-            <search-component v-model="searchLine"></search-component>
+            <search-component v-model="search"></search-component>
          </div>
          <div class="actions">
             <custom-button v-on:click="setVisionCard">Корзина</custom-button>
@@ -26,8 +26,6 @@
       </main>
       <basket-goods v-if="cardIsVision" v-on:closeclick="setVisionCard"></basket-goods>
 
-
-      <div>{{ searchLine }}</div>
    </div>
 </body>
 </html>
