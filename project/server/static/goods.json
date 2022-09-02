@@ -1,0 +1,26 @@
+ [
+   {
+      "id": "1",
+      "product_name": "Tzaangors",
+      "price": 1800,
+      "image": "https://darkminiatures.com/image/cache/catalog/tovary/g-w/gw-as/as-054-400x350.png"
+   },
+   {
+      "id": "2",
+      "product_name": "Tzaangor Enlightened",
+      "price": 1100,
+      "image": "https://darkminiatures.com/image/cache/catalog/tovary/g-w/wr./wr-871-400x350.png"
+   },
+   {
+      "id": "3",
+      "product_name": "Smaug",
+      "price": 16360,
+      "image": "https://darkminiatures.com/image/cache/catalog/tovary/g-w/forgeworld/monster/fwm-003-400x350.jpg"
+   },
+   {
+      "id": "4",
+      "product_name": "Blood Warriors",
+      "price": 1200,
+      "image": "https://darkminiatures.com/image/cache/catalog/tovary/g-w/gw-as/as-009-400x350.jpg"
+   }
+]
